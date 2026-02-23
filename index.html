@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public Holiday Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 min-h-screen p-4">
+
+<div class="max-w-5xl mx-auto bg-white p-6 rounded shadow">
+
+    <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold">Public Holiday Finder</h1>
+       
+    </div>
+
+
+    <div class="grid md:grid-cols-5 gap-3 mb-4">
+
+        <select id="countrySelect" class="border p-2 rounded">
+            <option value="">Countries</option>
+        </select>
+
+        <select id="yearSelect" class="border p-2 rounded">
+            <option value="">Select Year</option>
+        </select>
+
+        <select id="monthSelect" class="border p-2 rounded" onchange="applyFilters()">
+            <option value="">All Months</option>
+        </select>
+
+        <select id="typeSelect" class="border p-2 rounded" onchange="applyFilters()">
+            <option value="">Types</option>
+            <option value="Public">Public</option>
+            <option value="National">National</option>
+        </select>
+
+        <button onclick="searchHolidays()"
+            class="bg-blue-500 text-white rounded p-2">
+            Search
+        </button>
+    </div>
+
+    <div id="loadingText" class="text-center text-blue-500 hidden">
+        Loading...
+    </div>
+
+    <div id="messageBox" class="text-center text-red-500">
+        
+    </div>
+
+    <div id="totalCount" class="text-center font-semibold mt-2">
+
+    </div>
+
+    <div class="flex justify-end gap-2 mt-3">
+       
+    </div>
+
+    <div id="holidayList" class="mt-4 space-y-3"></div>
+
+    
+    <div class="mt-6">
+        <h2 class="font-bold mb-2"></h2>
+        
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body.dark-mode {
+    background-color: #4a6fbe;
+    color: rgb(146, 34, 34);
+}
+
+
+body.dark-mode .bg-white {
+    background-color: greenyellow ;
+}
+
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #374151;
+    color: white;
+    border-color: #1454ad;
+}
+
+
+body.dark-mode button {
+    size: 1px;
+}
+
+
+body.dark-mode .bg-gray-50 {
+    background-color: #374151 ;
+}
+
+
+body.dark-mode .bg-gray-200 {
+    background-color: #10b981 ;
+    color: white;
+}
+
+
+.highlight-upcoming {
+    border: 2px solid #10b981;
+}
